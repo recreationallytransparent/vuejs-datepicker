@@ -348,9 +348,6 @@ export default {
       if (this.disabledPicker || this.isInline) {
         return false
       }
-      if (this.isOpen) {
-        return this.close(true)
-      }
       this.setInitialView()
       if (!this.isInline) {
         this.$emit('opened')
